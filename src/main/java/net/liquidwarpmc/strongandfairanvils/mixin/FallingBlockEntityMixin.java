@@ -10,6 +10,8 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(FallingBlockEntity.class)
 public abstract class FallingBlockEntityMixin {
+/*
+    BlockTags are now used
 
     @Shadow private BlockState block;
 
@@ -25,5 +27,5 @@ public abstract class FallingBlockEntityMixin {
     )
     private boolean destroyStoneAnvilOnFalling(boolean value) {
         return value || this.block.getBlock() == StrongAndFairAnvils.STONE_ANVIL;
-    }
+    }*/
 }

@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(AnvilBlock.class)
 public abstract class AnvilBlockMixin {
 
-    @Inject(method="getLandingState", at = @At("HEAD"), cancellable = true)
+    @Inject(method= "getLandingState(Lnet/minecraft/block/BlockState;)Lnet/minecraft/block/BlockState;", at = @At("HEAD"), cancellable = true)
     private static void destroyStoneAnvilOnFalling(BlockState blockState, CallbackInfoReturnable<BlockState> cir) {
        Block block = blockState.getBlock();
 

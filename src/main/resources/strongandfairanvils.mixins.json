@@ -2,7 +2,7 @@
   "required": true,
   "package": "net.liquidwarpmc.strongandfairanvils.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": ["ItemStackMixin", "AnvilContainerMixin", "AnvilContainer2Mixin", "AnvilBlockMixin", "FallingBlockEntityMixin"],
+  "mixins": ["ItemStackMixin", "AnvilContainerMixin", "AnvilBlockMixin", "FallingBlockEntityMixin"],
   "injectors": {
     "defaultRequire": 1
   }
